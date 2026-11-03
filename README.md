@@ -53,9 +53,9 @@ The production build is exported as static files into the `out/` folder. This is
 ## Deployment to Hostinger
 
 1. Run `npm install` and `npm run build` locally.
-2. Open Hostinger **File Manager** and go to `public_html`.
-3. Upload the contents of the generated `out/` folder into `public_html` (upload the contents, not the `out` folder itself).
-4. Make sure `index.html` is directly inside `public_html`.
+2. Open Hostinger **File Manager** and open the document root assigned to your domain. Hostinger may call this `public_html` or use another website-specific directory.
+3. Upload the contents of the generated `out/` folder into that document root (upload the contents, not the `out` folder itself).
+4. Make sure `index.html` is directly inside the document root, alongside `_next/` and `images/`.
 5. Connect your domain and enable SSL in Hostinger.
 
 The site is configured for static hosting with `output: 'export'` and unoptimized images, so a Node.js process is not required for shared hosting.
