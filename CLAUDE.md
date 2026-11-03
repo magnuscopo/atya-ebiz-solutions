@@ -7,7 +7,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```bash
 npm run dev      # Start dev server at http://localhost:3000
 npm run build    # Production build
-npm start        # Run production build
 npm run lint     # Next.js ESLint
 ```
 
@@ -42,5 +41,5 @@ Every section uses `'use client'` because they depend on Framer Motion (`useInVi
 ### Contact form is a stub
 `Contact.tsx` uses `react-hook-form` but `onSubmit` only `console.log`s the data after a fake 1s delay. To make it functional, wire it to an API route (`src/app/api/contact/route.ts`) or a third-party service — see README.md "Contact Form" section.
 
-### `next.config.js` quirk
-It sets `experimental.appDir: true`, which is a no-op in Next.js 14 (App Router is stable). Don't rely on this flag being meaningful.
+### Static deployment
+`next.config.js` uses `output: 'export'`, so `npm run build` creates the deployable static site in `out/`. Upload the contents of `out/` to Hostinger's `public_html` directory. Images use `unoptimized: true` because the static export does not include the Next.js image optimization server.

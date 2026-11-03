@@ -46,15 +46,19 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ```bash
 npm run build
-npm start
 ```
 
-## Deployment (Recommended: Vercel)
+The production build is exported as static files into the `out/` folder. This is the folder to upload to Hostinger shared hosting.
 
-1. Push this project to a GitHub repository
-2. Go to [vercel.com](https://vercel.com) and import the repo
-3. Click **Deploy** — Vercel auto-detects Next.js
-4. Your site is live in ~2 minutes with a free SSL certificate
+## Deployment to Hostinger
+
+1. Run `npm install` and `npm run build` locally.
+2. Open Hostinger **File Manager** and go to `public_html`.
+3. Upload the contents of the generated `out/` folder into `public_html` (upload the contents, not the `out` folder itself).
+4. Make sure `index.html` is directly inside `public_html`.
+5. Connect your domain and enable SSL in Hostinger.
+
+The site is configured for static hosting with `output: 'export'` and unoptimized images, so a Node.js process is not required for shared hosting.
 
 ## Customization
 

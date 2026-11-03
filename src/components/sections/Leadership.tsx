@@ -45,6 +45,18 @@ const directors = [
       'With a strong blend of strategic HR leadership and operational management expertise, Ajay brings a solution-oriented and business-focused perspective to organizational growth. His vision is to help businesses build sustainable, process-driven, and high-performing work environments that support long-term scalability and operational excellence.',
     ],
   },
+  {
+    name: 'Vaibhav Jain',
+    initials: 'VJ',
+    role: 'Director',
+    image: '/images/Vaibhav-Jain.png',
+    bio: [
+      'Vaibhav Jain is a seasoned and results-driven Hospitality, Retail & Business Operations Leader with over 16 years of professional experience across luxury retail, beauty and cosmetics, food & beverage, and the hospitality industry. As a Director of Atya Ebiz Solutions LLP, he brings extensive expertise in business operations, multi-location retail management, revenue growth, team leadership, and customer experience management, with a strong focus on driving business performance and operational excellence.',
+      'Throughout his professional journey, he has been associated with globally recognized brands such as Nykaa Luxe, KIKO Milano, Sephora, Clinique (Estée Lauder), InterContinental, Holiday Inn, and Le Méridien. His experience across these prestigious organizations has provided him with in-depth exposure to luxury retail operations, brand management, hospitality services, business development, sales strategy, and customer relationship management. He has demonstrated strong capabilities in strategic business planning, operational management, revenue enhancement, inventory control, visual merchandising, and delivering exceptional service standards.',
+      'Throughout his career, he has demonstrated effective leadership in managing multi-location operations, developing high-performing teams, strengthening client relationships, improving operational processes, and driving sales and profitability. Known for his strategic thinking, people management skills, decision-making, and problem-solving abilities, he focuses on aligning operational priorities with broader business objectives to deliver measurable results.',
+      'As a business leader, his vision is to drive sustainable business growth through strategic planning, operational efficiency, customer-centric practices, and continuous improvement. He is committed to building strong business relationships, developing accountable teams, enhancing organizational capabilities, and creating long-term value through innovation, service excellence, and effective business management.',
+    ],
+  },
 ]
 
 export default function Leadership() {
