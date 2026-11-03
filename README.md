@@ -60,6 +60,8 @@ The production build is exported as static files into the `out/` folder. This is
 
 The site is configured for static hosting with `output: 'export'` and unoptimized images, so a Node.js process is not required for shared hosting.
 
+If the page loads without styling, the `_next/` folder was not uploaded completely. Replace the live files with all contents of `out/`, ensuring `index.html`, `_next/static/css/`, `_next/static/chunks/`, and `images/` are directly inside the domain document root.
+
 ## Customization
 
 - **Colors**: Edit `tailwind.config.ts` → `colors.brand`
